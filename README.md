@@ -1,31 +1,23 @@
-📚 Data Structures & Algorithms (DSA) Practice
+-: Data Structures & Algorithms (DSA) Practice
 
 Welcome to my DSA Practice repository!
 This repo contains my implementations of fundamental Data Structures, Algorithms, and related coding exercises using JavaScript.
 I created this space to track my progress, improve problem-solving skills, and build strong DSA foundations.
 
-🚀 Purpose of This Repository
-
+-: Purpose of This Repository
 To practice DSA consistently
-
 To understand core mechanics by building everything from scratch
-
 To improve problem-solving & logical thinking
-
 To prepare for coding interviews
-
 To keep all practice code organized in one place
 
-🛠️ Technologies Used
-
-JavaScript (ES6+)
-
-Node.js (optional for running scripts)
-
+-: Technologies Used
+JavaScript
+Node.js
 VS Code
 
-📂 Repository Structure
-📁 dsa-practice
+-: Repository Structure
+-: dsa-practice
 │
 │     ├── linked-list.js
 │     ├── stack.js
@@ -35,14 +27,10 @@ VS Code
 │     └── graph.js
 │     ├── searching
 │     ├── sorting
-│     └── recursion
-│         
-│
+│     └── recursion        
 └── README.md
 
-
-
-📘 Topics Covered (So Far)
+-: Topics Covered (So Far)
 Data Structures
 
 Arrays
@@ -71,10 +59,8 @@ Traversals
 
 Basic math & number algorithms
 
-🤝 Contributions
-
+-: Contributions
 This repository is mainly for personal learning, but suggestions and improvements are always welcome!
 
-🧑‍💻 Author
-
+-: Author
 Aditya Girawale
