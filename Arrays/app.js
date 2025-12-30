@@ -67,3 +67,4 @@ function binarySearch(arr,n){
     return -1
 }
 // console.log(binarySearch([10,20,30,40,50],40))
+
