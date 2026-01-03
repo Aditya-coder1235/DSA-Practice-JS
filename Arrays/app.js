@@ -68,3 +68,19 @@ function binarySearch(arr,n){
 }
 // console.log(binarySearch([10,20,30,40,50],40))
 
+
+
+//find missing number
+function findMissing(arr){
+    let n=arr.length+1
+
+    let totalSum=(n*(n+1))/2
+
+    let arrSum=arr.reduce((a,b)=>a+b);
+
+    return totalSum-arrSum
+}
+
+let arr=[1,2,4,5]
+let res=findMissing(arr)
+// console.log(res)
