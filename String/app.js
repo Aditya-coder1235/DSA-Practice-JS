@@ -50,5 +50,54 @@ function checkAnagram(s,t){
     return true
 }
 
-let res=checkAnagram('listen','silent')
-console.log(res)
+// let res=checkAnagram('listen','silent')
+// console.log(res)
+
+
+//longest substring
+
+function longstSubString(str){
+    let set=new Set()
+    let j=0;
+    let max=0;
+
+    for(let i=0; i<str.length; i++){
+        
+        while(set.has(str[i])){
+            set.delete(str[j])
+            j++
+        }
+
+        set.add(str[i])
+        max=Math.max(max,i-j+1)
+    }
+    return max
+}
+
+// console.log(longstSubString('abcabcbb')) 
+
+
+
+
+//valid paranthesis
+
+function isValidParanthesis(str){
+    let stack=[]
+    let map={
+        ')':'(',
+        '}':'{',
+        ']':'['
+    }
+
+    for(let ch of str){
+        if(map[ch]){
+            if(stack.pop() !== map[ch])return false
+        }else{
+            stack.push(ch)
+        }
+    }
+
+    return stack.length===0
+}
+
+console.log(isValidParanthesis('(){}[]'))

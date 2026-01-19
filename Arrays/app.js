@@ -81,6 +81,64 @@ function findMissing(arr){
     return totalSum-arrSum
 }
 
-let arr=[1,2,4,5]
-let res=findMissing(arr)
+// let arr=[1,2,4,5]
+// let res=findMissing(arr)
+// console.log(res)
+
+
+//merge intervals
+
+function merge(arr){
+    arr.sort((a,b)=>a[0]-b[0])
+
+    let merged=[arr[0]]
+
+    for(let i=1; i<arr.length; i++){
+        let prev=merged[merged.length-1]
+        let curr=arr[i]
+
+        if(prev[1]>=curr[0]){
+            prev[1]=Math.max(prev[1],curr[1])
+        }else{
+            merged.push(curr)
+        }
+    }
+    return merged
+}
+
+// console.log(merge([[1,3],[2,6],[8,10],[15,18]]))
+
+
+
+//longest subarray sum
+
+function subArraySum(arr){
+    let maxSum=arr[0]
+    let currSum=0;
+
+    for(let num of arr){
+        if(currSum<0)currSum=0
+        currSum+=num
+        maxSum=Math.max(currSum,maxSum)
+    }
+    return maxSum
+}
+
+// console.log(subArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
+
+
+
+
+// . Product of Array Except Self
+let arr=[1,2,3,4]
+let res=[]
+for(let i=0; i<arr.length; i++){
+    let a=1;
+    for(let j=0; j<arr.length; j++){
+        if(i!==j){
+            a*=arr[j]
+        }
+    }
+    res.push(a)
+}
 // console.log(res)
